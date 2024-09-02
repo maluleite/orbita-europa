@@ -4,10 +4,11 @@ import seaborn as sn
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
-from sklearn.metrics import r2_score
 
 
-dados = pd.read_csv('C:/Users/maluu/Downloads/ORB04_EUR_EPHIO_SPACECRAFT_EVENT_TIME.csv', sep=',')
+
+dados = pd.read_csv('C:/Users/maluu/Downloads/ORB04_EUR_EPHIO_SPACECRAFT_EVENT_TIME.csv', sep=',') #Local do arquivo
+
 
 col = dados.columns
 dados.set_index(pd.to_datetime(dados[col[0]]), inplace=True)
